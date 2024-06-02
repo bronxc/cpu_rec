@@ -53,6 +53,10 @@ files, and outputs the architecture corresponding to this section;
 the possibility of extracting the text section is also used when
 building a corpus from full binary files.
 
+If https://lief-project.github.io/ is installed, then the tool can
+use it instead of elfesteem. If both are installed, option '-l'
+gives priority to lief.
+
 Option `-d` followed by a directory dumps the corpus in that directory;
 using this option one can reconstruct the default corpus.
 
@@ -292,4 +296,5 @@ and was distributed for the Atredis BlackHat 2018 challenge, under an unknown li
 
 ## Development status
 
+[![Portability](https://github.com/airbus-seclab/cpu_rec/actions/workflows/portability.yml/badge.svg)](https://github.com/airbus-seclab/cpu_rec/actions/workflows/portability.yml)
 [![Code Quality](https://img.shields.io/lgtm/grade/python/g/airbus-seclab/cpu_rec.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/airbus-seclab/cpu_rec/context:python)
